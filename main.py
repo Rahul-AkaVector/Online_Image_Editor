@@ -1,6 +1,15 @@
 from io import BytesIO
 from PIL import Image, ImageEnhance,ImageFilter
 import streamlit as st
+# st.beta_set_page_config(page_title="Online Image Editor")
+
+st.set_page_config(
+    page_title="Online Image Editor",
+    page_icon="📸",
+    layout="wide",
+    initial_sidebar_state="auto",
+)
+
 
 # ======================== This  section will remove the hamburger and watermark and footer and header from streamlit ===========
 hide_streamlit_style = """
